@@ -11,19 +11,19 @@ const shuffle = () => {
 // Sort function
 const sort = () => {
   var content = [];
-  for (var i = 0; i < li.length; i++) {
-    content.push(li[i]);
+  for (var j = 0; j < li.length; j++) {
+    content.push(li[j]);
   }
 
   content.sort(function (a, b) {
-    var a1 = parseInt(a.innerHTML);
-    var b1 = parseInt(b.innerHTML);
-    return a1 < b1 ? -1 : a1 > b1 ? 1 : 0;
+    var valOne = parseInt(a.innerHTML);
+    var valTwo = parseInt(b.innerHTML);
+    return valOne < valTwo ? -1 : valOne > valTwo ? 1 : 0;
   });
 
   content.reverse();
 
-  for (var i = 0; i < content.length; i++) {
-    ul.insertBefore(content[i], ul.firstChild);
+  for (var k = 0; k < content.length; k++) {
+    ul.insertBefore(content[k], ul.firstChild);
   }
 };
