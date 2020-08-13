@@ -1,14 +1,14 @@
 var ul = document.querySelector("ul");
 var li = ul.querySelectorAll("li");
 
-// Shuffle function
+// --- Shuffle function ---
 const shuffle = () => {
   for (var i = ul.children.length; i >= 0; i--) {
     ul.appendChild(ul.children[(Math.random() * i) | 0]);
   }
 };
 
-// Sort function
+// --- Sort function ---
 const sort = () => {
   var content = [];
   for (var j = 0; j < li.length; j++) {
